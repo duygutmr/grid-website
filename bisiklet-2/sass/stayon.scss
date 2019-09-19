@@ -1,0 +1,36 @@
+.stayon{
+    padding: 3rem 0;
+    display: grid;
+    grid-column: center-start / center-end;
+
+    &__logo{
+        justify-self: center;
+    }
+    &__text{
+        justify-self: center;
+        font-size: 2rem;
+        font-style: italic;
+        color: #8e8e94e0;
+        padding: 1rem;
+    }
+    &__content{
+        justify-self: center;
+        padding: 3rem;
+        @media only screen and (max-width:600px){
+           display: grid;
+           grid-gap: 1rem;
+        }
+    }
+    &__input{
+        padding: 2rem 10rem;
+        color: #8e8e947a;
+    }
+    &__btn{
+        background-color:#64C29E;
+        border: none;
+        padding: 2rem 5rem;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,58 @@
+.retrobike{
+    display: grid;
+    grid-column: full-start / full-end;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6, 5vw);
+
+    &__content{
+        grid-column: 4 / 9;
+        grid-row: 1 / 4;
+        align-self: center;
+        padding: 2rem;
+        @media only screen and (max-width:600px){
+            grid-column: 1 / -1;
+            grid-row: auto; 
+            padding: 0;
+            align-self: auto;
+            text-align: center;
+          }
+    }
+
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    &__text{
+        color: #8e8e94e0;
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__img-1{
+        grid-column: 1 / 4;
+        grid-row: 1 / 6;
+        @media only screen and (max-width:600px){
+            display: none;
+          }
+    }
+   
+    &__img-2{
+        grid-column: 4 / 9;
+        grid-row: 4 / 6;
+        @media only screen and (max-width:600px){
+           display: none;
+          }
+    }
+
+    &__img-3{
+        grid-column: 9 / -1;
+        grid-row: 1 / 6;
+        @media only screen and (max-width:600px){
+            display: none;
+           }
+    }
+
+}

@@ -1,0 +1,42 @@
+.header{
+    padding: 2rem 0;
+    display: grid;
+    grid-column: full-start / full-end;
+
+    .nav{
+        justify-content: center;
+
+        &__logo{
+            justify-self: center;
+            padding: 2rem;
+
+            @media only screen and (max-width:600px){
+                order:-2;
+            }
+    }
+
+        &__unordered{
+            display: inline-flex;
+            text-transform: uppercase;
+            list-style-type: none;
+            text-decoration: none;
+
+            @media only screen and (max-width:600px){
+                grid-column: 1 / -1;
+                display: grid;
+                text-align: center;
+              }
+
+            li{
+                display: inline;
+            }
+            a{
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.5rem;
+                padding: 0 3rem;
+                color: #7d7d81e0;
+            }
+        }
+    }
+}

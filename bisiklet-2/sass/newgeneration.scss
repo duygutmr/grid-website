@@ -1,0 +1,27 @@
+.newgeneration{
+    padding: 5rem 0;
+    background-color: #F7F7F7;
+    display: grid;
+    grid-column: full-start / full-end;
+
+    @media only screen and (max-width:600px){
+         grid-column: 1 / -1; 
+    }
+
+    &__content{
+        display: grid;
+        align-content: center;
+    }
+
+    &__title{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem;
+    }
+    &__text{
+        text-align: center;
+        color: #8e8e94e0;
+        font-size: 1.5rem;
+    }
+}

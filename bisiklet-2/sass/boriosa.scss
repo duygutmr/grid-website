@@ -1,0 +1,56 @@
+.boriosa{
+    background-color: #fff;
+    display: grid;
+    grid-column: full-start / full-end;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 5vw);
+    
+    @media only screen and (max-width:600px){
+        grid-template-rows: auto;
+    }
+
+
+
+    &__content{
+       background-color: #fff;
+       grid-column: 1 / 5;
+       padding: 2rem;
+      
+       @media only screen and (max-width:600px){
+        grid-column: 1 / -1;
+        grid-row: auto;
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.8rem;
+    }
+    &__text{
+        color:#8e8e94e0;
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__img{
+        grid-column: 5 / -1;
+        grid-row: 1 / 7;
+        @media only screen and (max-width:600px){
+                max-width: 100%;
+                grid-column: 1 / -1;
+                grid-row: auto;
+           }
+    }
+    &__img-2{
+        grid-column: 1 / 5;
+        grid-row: 5 / 7;
+        @media only screen and (max-width:600px){
+            display: none;
+           }
+    }
+   
+}
